@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  font-family: Arial, sans-serif;
+
+  scrollbar-width: none; /* Firefox */
+  ::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+body {
+  background-image: radial-gradient(
+    circle,
+    #ebebeb,
+    #eaedf5,
+    #e2f2fe,
+    #d7f7ff,
+    #cdfdff
+  );
+}

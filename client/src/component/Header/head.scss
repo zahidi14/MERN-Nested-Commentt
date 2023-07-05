@@ -1,0 +1,56 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 5%;
+    height: 50px;
+    background-color: rgba(216, 220, 220, 0.118);
+
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%; /* Adjust the horizontal position as needed */
+      transform: translateX(-50%);
+      width: 90%; /* Adjust the length of the border */
+      height: 2px; /* Adjust the thickness of the border */
+      background-color: #000; /* Adjust the color of the border */
+    }
+    .logo {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .menu {
+      display: flex;
+      width: auto;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        width: 80px;
+        height: 35px;
+        background-color: #00000000;
+        color: rgb(74, 74, 74);
+        border: 1px solid rgb(74, 74, 74);
+        &:hover {
+          background-color: rgb(74, 74, 74);
+          color: whitesmoke;
+          border: none;
+        }
+      }
+      li {
+        margin-right: 20px;
+      }
+      ul {
+        list-style: none;
+      }
+      .navi {
+        display: flex;
+      }
+    }
+  }
+}

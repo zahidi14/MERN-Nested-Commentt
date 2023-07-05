@@ -1,0 +1,22 @@
+.inputCont {
+  display: block;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  input {
+    width: 100%; /* Take up the full width of the parent container */
+    padding: 8px; /* Add some padding for visual appeal */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border to the input field */
+    border-radius: 4px; /* Apply rounded corners */
+    &:focus {
+      outline: none; /* Remove the default focus outline */
+      border-color: dodgerblue; /* Add a custom border color when focused */
+    }
+  }
+  label {
+    display: block; /* Display the label as a block element */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    font-weight: bold;
+  }
+}
