@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Header />
       <Break height={30} />
-      <Router />
+        <Router />
       <Break height={30} />
       <Footer />
     </>

@@ -30,6 +30,10 @@ Error Response Status
                     password : "password"
                 }
             }
+          err:
+            {
+                404: "User Not Found"
+            }
 
     [2] -- Register
         http://url.api/v1/auth/register/
@@ -51,6 +55,37 @@ Error Response Status
                 }
             }
 
+        err:
+            {
+                400:"Invalid Input",
+            }
+
 --- Group main
 
-    [1] --
+    res:
+    {
+        "message" : "Posted Successfully",
+        "data"    : {
+            "id"    :1,
+            "title" :"Title",
+            "image" :"image.jps",
+            "content"  :"Lorem Ipsum Dolor",
+            "created_at"    : "12-12-2023",
+            "author"    :{
+                "authId"    : 1,
+                "name"      : "John Doe"s
+            }
+        }
+    }
+
+    [1] -- CREATE BLOG
+    [2] -- READ BLOG
+    [3] -- UPDATE BLOG
+    [4] -- DELETE
+
+    mongoose
+    express
+    cors
+    axios
+    body parser
+    
